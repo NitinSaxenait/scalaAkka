@@ -60,15 +60,15 @@ object exercises extends App {
         }
       }
       case WithdrawAmount(amountWid) => {
-        if (amountWid >= amount) {
-          println("Withdraw Failed, Insufficient Balance")
-        }
-        else {
-          amount -= amountWid
-          println("Money withdraw successfully")
+          if (amountWid >= amount) {
+            println("Withdraw Failed, Insufficient Balance")
+          }
+          else {
+            amount -= amountWid
+            println("Money withdraw successfully")
 
 
-        }
+          }
 
       }
       case Statement(depositAmount, withdrawAmount) => {
